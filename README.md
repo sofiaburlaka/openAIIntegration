@@ -120,8 +120,7 @@ const PROMPTS = {
 
 ## Author
 
-[Your Name or Team]
-
+Sofia Burlaka
 ---
 
 Thank you for using this application!
