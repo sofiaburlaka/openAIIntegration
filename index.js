@@ -1,7 +1,6 @@
 import express from 'express';
 import OpenAI from 'openai';
 import dotenv from "dotenv";
-import axios from "axios";
 dotenv.config();
 
 const  openai = new OpenAI({
@@ -79,3 +78,5 @@ app.post("/api/run", async (req, res) => {
 // });
 
 app.listen(3000, () => console.log('Listening on port 3000'));
+
+export default app;

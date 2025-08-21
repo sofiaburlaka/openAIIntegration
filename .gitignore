@@ -13,3 +13,6 @@ frontend/node_modules/
 .idea/
 .vscode/
 .DS_Store
+
+jest.config.js
+
