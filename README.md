@@ -84,10 +84,10 @@ In the backend `/api/run` file, reusable prompt IDs are configured for each mode
 
 ```
 const PROMPTS = {
-summarize: "pmpt_68a57c1c0f0881968e23789749e398d7003acf55bc2a8efb",
-rephrase: "pmpt_68a58eecbb3481978b8c9ddd9fe4d49d0da6ba3dd23f0fa9",
-classify: "pmpt_68a590be7f848193bb88221280bb357e03c0c1972e8e6fcd",
-extract_json: "pmpt_68a592ec274c8193a383a24ba819320608c6c3fce97be697",
+summarize: "pmpt_",
+rephrase: "pmpt_",
+classify: "pmpt_",
+extract_json: "pmpt_",
 };
 ```
 
