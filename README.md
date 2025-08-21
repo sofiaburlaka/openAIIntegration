@@ -1,9 +1,7 @@
-```markdown
+
 # OpenAI Integration Project
 
 This is a simple web application with a React frontend and an Express backend that integrates with the OpenAI API to perform text operations: summarization, rephrasing, classification, and JSON extraction. The app uses reusable prompts from OpenAI and supports tone selection for rephrasing.
-
----
 
 ## Features
 
@@ -18,7 +16,10 @@ This is a simple web application with a React frontend and an Express backend th
 - Shows token usage information (prompt tokens, completion tokens, total tokens).
 - Copy result button.
 
----
+![JsonRESULT](/jsonresult.jpg)
+
+![PherpRESULT](/perphraseresult.jpg)
+
 
 ## Technical Architecture
 
@@ -26,45 +27,36 @@ This is a simple web application with a React frontend and an Express backend th
 - **Backend:** Node.js, Express
 - **OpenAI API:** Responses API, reusable prompts
 
----
-
+```
 ## Getting Started
-
 ### Setup
 
 1. Obtain an OpenAI API key and save it in a `.env` file in the project root:
-
 ```
+
 OPENAI_API_KEY=your_openai_api_key_here
-```
 
+```
 2. Install dependencies:
-
-```
+```   
 npm install
+
 ```
-
 ### Run
-
 ```
 npm run start
-```
 
+```
 - The server will run on `http://localhost:3000`.
 - The frontend will be accessible at the same address.
 
----
-
 ## Project Structure
 
-```
 /frontend - React application
 /backend  - Express server with OpenAI integration
 .env      - file with API key
 ```
-
----
-
+```
 ## Usage
 
 - Enter text into the input field.
@@ -76,39 +68,33 @@ npm run start
 - Token usage statistics are shown below the result.
 - The "Copy result" button copies the result to clipboard.
 
----
-
 ## Reusable Prompts Configuration
 
 In the backend `/api/run` file, reusable prompt IDs are configured for each mode:
 
 ```
+
 const PROMPTS =  { 
     summarize: "pmpt...", 
     rephrase: "pmpt...", 
     classify: "pmpt...", 
     extract_json: "pmp...", 
 };
+
 ```
-
----
-
 ## Implementation Details
 
 - For `rephrase` mode, the `tone` variable (casual, professional, friendly) is passed in `prompt.variables` and used in the reusable prompt.
 - Optional chaining is used for safe handling of OpenAI responses.
 - Error handling returns proper messages to the frontend.
 
----
-
 ## Requirements
 
 - Node.js v18+
 - Current version of npm/yarn
 - OpenAI API key
-
----
-
+```
+```
 ## Future Improvements
 
 - User authentication integration
@@ -116,12 +102,11 @@ const PROMPTS =  {
 - Support for additional models and configurations
 - Expansion of text processing modes
 
----
 
 ## Author
 
 Sofia Burlaka
----
+
 
 Thank you for using this application!
 ```
