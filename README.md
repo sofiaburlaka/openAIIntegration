@@ -84,10 +84,6 @@ In the backend `/api/run` file, reusable prompt IDs are configured for each mode
 
 ```
 const PROMPTS = {
-summarize: "pmpt_",
-rephrase: "pmpt_",
-classify: "pmpt_",
-extract_json: "pmpt_",
 };
 ```
 
@@ -119,8 +115,6 @@ extract_json: "pmpt_",
 ---
 
 ## Author
-
-[Your Name or Team]
 
 ---
 
