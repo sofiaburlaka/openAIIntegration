@@ -83,7 +83,11 @@ npm run start
 In the backend `/api/run` file, reusable prompt IDs are configured for each mode:
 
 ```
-const PROMPTS = {
+const PROMPTS =  { 
+    summarize: "pmpt...", 
+    rephrase: "pmpt...", 
+    classify: "pmpt...", 
+    extract_json: "pmp...", 
 };
 ```
 
@@ -116,6 +120,7 @@ const PROMPTS = {
 
 ## Author
 
+Sofia Burlaka
 ---
 
 Thank you for using this application!
